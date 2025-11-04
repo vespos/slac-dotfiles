@@ -49,6 +49,7 @@ alias cdnewest='cd `ls -td --color=never */ | head -1`'
 #   retaining your current working directory.
 alias psb='sshcd psbuild-rhel7'
 alias psb5='sshcd psbuild-rhel5'
+alias psb9='sshcd psbuild-rocky9'
 alias psd='sshcd psdev'
 alias xppc='ssh -X xppopr@xpp-control'
 alias xppd='ssh -X xppopr@xpp-daq'
@@ -145,3 +146,4 @@ alias add_pwd_to_python='export PYTHONPATH=$PWD'
 # Custom commands aliases
 alias myiftop='sudo iftop -m 1G'
 alias swtool='/cds/group/pcds/pyps/apps/switchtool/latest/switchtool'
+alias chrome='/usr/bin/google-chrome-stable --user-data-dir="$HOME/.config/google-chrome.$HOSTNAME" &'
