@@ -1,5 +1,4 @@
 #!/bin/bash
-# shellcheck disable=SC2119
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -243,7 +242,7 @@ pathmunge /reg/g/pcds/engineering_tools/latest-released/scripts
 #    For documentation, see: https://github.com/pcdshub/engineering_tools
 
 source /cds/group/pcds/engineering_tools/latest-released/scripts/ctrlenv_setup.sh
-ctrlenv-pathmunge
+ctrlenv-pathmunge latest-released
 # ctrlenv_setup.sh sets up the ctrlenv tools in your shell
 # ctrlenv-pathmunge with no arguments selects all the latest released apps
 # This is the standard setup for including python-based apps on your path
