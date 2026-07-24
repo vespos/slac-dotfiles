@@ -9,7 +9,7 @@ on:
 
 jobs:
   standard:
-    uses: pcdshub/pcds-ci-helpers/.github/workflows/pre-commit.yml@master
+    uses: pcdshub/pcds-ci-helpers/.github/workflows/pre-commit.yml@d535ae04c63236687160bfde064e83489a5eceba
     with:
       args: "--all-files --show-diff-on-failure"
       annotate: true
@@ -28,7 +28,7 @@ jobs:
         shell: bash --login -eo pipefail {0}
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
       with:
         fetch-depth: 0
         submodules: 'recursive'

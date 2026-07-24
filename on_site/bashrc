@@ -255,6 +255,16 @@ pathmunge /cds/group/pcds/engineering_tools/latest-released/scripts
 #  * General tools of use to ECS engineers
 #    For documentation, see: https://github.com/pcdshub/engineering_tools
 
+source /cds/group/pcds/engineering_tools/latest-released/scripts/ctrlenv_setup.sh
+ctrlenv-pathmunge latest-released
+# ctrlenv_setup.sh sets up the ctrlenv tools in your shell
+# ctrlenv-pathmunge with no arguments selects all the latest released apps
+# This is the standard setup for including python-based apps on your path
+# You can change this to a specific dated bundle of released apps,
+# or to specific app versions if you prefer.
+# See the engineering_tools documentation above
+# and also see https://confluence.slac.stanford.edu/x/iYFiKg
+
 # *Optional*
 # Do you work in a specific hutch? You may want to use their utilities.
 # Uncomment applicable ones here:
