@@ -13,14 +13,6 @@ Host s3dflogin
     # ControlMaster auto
     # ControlPath ~/.SSH-%r@%h:%p
 
-Host s3dflogin-arch
-    HostName s3dflogin.slac.stanford.edu
-    # Archiver management interface:
-    # use http://localhost:17665/mgmt/ui/index.html
-    LocalForward localhost:17665 pscaa02:17665
-    # Archiver API for programmatic access:
-    LocalForward localhost:17668 pscaa02:17668
-
 # Primary development host "psbuild-rhel7" is commonly referred to as
 # just "psbuild".  There are older psbuild hosts, but they are no longer
 # in use, generally.
@@ -77,9 +69,8 @@ Host psbuild-socks
     # On MacOS, to start Google Chrome with this proxy:
     #  open -a "Google Chrome" --args --proxy-server=socks5://localhost:8080
     # You will need to enter URLs with "http://" preceding them, otherwise
-    # it may send you to Google. These examples should work:
+    # it may send you to Google. This example should work:
     #    http://ctl-logsrv01.pcdsn/
-    #    http://pscaa01.pcdsn:17665/mgmt/ui/index.html
 
 # pscron - used for scheduling cron job tasks
 Host pscron
